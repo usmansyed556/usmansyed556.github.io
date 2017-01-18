@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[webgames-table]-->
+<body>
+<table class="applet">
+
+<tr><td>Super Miner</td></tr>
+
+<tr><td class="frame"><script>
+
+var embed_text;
+var game_embed_text = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="600" height="480" align="middle">'+
+
+'<param name="movie" value="/multimedia/vd4l/goldn_en.swf">'+
+'<param name="quality" value="high">'+
+'<param name="salign" value="T">'+
+'<param name="allowScriptAccess" value="never">'+
+
+'<embed src="/multimedia/vd4l/goldn_en.swf" allowScriptAccess="never" width="600" height="480" align="middle" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>'+
+
+'</object>';
+
+GetFlashVer();
+
+var flashPlayerOK = FlashVersionCompliance( 6,0,29 );
+var canExpressInstall = (FlashVersionCompliance( 6, 0, 65 ) == "yes" ? true : false);
+
+var axSupport = ( isIE && isWin && !isOpera );
+
+if( flashPlayerOK == "yes" )
+{
+	embed_text = game_embed_text;
+}
+else
+{
+	wgUpgradeFlash();
+}
+
+</script><script src="/embed.js"></script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="600" height="480" align="middle">
+
+<param name="movie" value="/multimedia/vd4l/goldn_en.swf">
+<param name="quality" value="high">
+<param name="salign" value="T">
+<param name="allowScriptAccess" value="never">
+
+<embed src="/multimedia/vd4l/goldn_en.swf" allowScriptAccess="never" width="600" height="480" align="middle" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+
+</object></noscript></td></tr>
+
+</table>
+
+<table class="controls">
+<tr>
+<td width="71" align="right"><img src="../icon_mouse.gif" width="47" height="35" alt="Mouse" title="Mouse" /></td><td>- Point & click</td>
+</tr>
+</table>
+
+<div id="tips_content">
+
+<table><tr><td>
+
+<table class="nested"><tr><td>Click on left or right side of miner to move</td></tr>
+<tr><td>Click below to start capture</td></tr>
+<tr><td>Click sign next to miner to destroy load</td></tr></table>
+
+</td></tr></table>
+
+</div>
+
+
+
+</div></center>
+</html>
